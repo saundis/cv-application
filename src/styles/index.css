@@ -1,0 +1,107 @@
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.editor-back {
+    background-color: rgb(20, 20, 20);
+    border: 1px solid rgb(33, 33, 33);
+    border-radius: 25px;
+    padding: 1.25rem;
+    width: 30rem;
+    max-height: 75vh;
+    overflow-y: auto;
+    scrollbar-color: rgb(0, 0, 0) rgb(20, 20, 20);
+}
+
+h1,
+.pageHeader {
+    margin: 0 0 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+button {
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 0.2rem 1.25rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    color: aliceblue;
+    will-change: transform;
+    transition: 0.5s;
+}
+
+button.edit {
+    background-color: rgb(165, 119, 210);
+    border: 1px solid rgb(185, 144, 228);
+}
+
+button.add {
+    background-color: rgb(58, 186, 228);
+    border: 1px solid rgb(117, 191, 216);
+}
+
+button.submit {
+    background-color: rgb(53, 197, 84);
+    border: 1px solid rgb(120, 219, 120);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+span {
+    font-weight: 500;
+    color: rgb(245, 245, 245);
+}
+
+input,
+textarea {
+    appearance: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(44, 44, 44);
+    border: 1px solid rgb(82, 82, 82);
+    transition: border 0.5s;
+    color: aliceblue;
+    padding-left: 0.25rem;
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover {
+    border: 1px solid rgb(50, 54, 235);
+}
+
+.input-container {
+    margin: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    resize: none;
+    height: 5rem;
+}
